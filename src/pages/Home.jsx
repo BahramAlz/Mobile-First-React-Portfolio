@@ -1,6 +1,9 @@
+import {
+  Link,
+} from 'react-router-dom';
+
 import Landing from "../assets/landing.png"
 import Mission from "../assets/mission.png"
-
 import { GoArrowUpRight } from "react-icons/go";
 
 function Home() {
@@ -48,7 +51,7 @@ function Home() {
               </div>
 
               <div className='flex items-center gap-1'>
-                <a href="#projects" className='font-medium underline decoration-white dark:text-gray-800'>All Projects</a>
+                <Link to="/projects" className='font-medium underline decoration-white dark:text-gray-800 dark:decoration-gray-800'>All Projects</Link>
                 <GoArrowUpRight className='text-gray-600 dark:text-gray-800' size={20}/>
               </div>
             </div>
