@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Landing from "../assets/landing.png";
-import Yung from "../assets/yungtitties.png";
+import Landing from "../../public/images/landing.png";
+import Yung from "../../public/images/yungtitties.png";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Projects = () => {

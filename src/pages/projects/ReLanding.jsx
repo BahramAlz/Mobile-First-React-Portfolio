@@ -1,6 +1,6 @@
 import React from "react";
-import LPMOBILE from "../../assets/lpmobile.png";
-import LANDING from "../../assets/landing.png";
+import LPMOBILE from "../../../public/images/lpmobile.png";
+import LANDING from "../../../public/images/landing.png";
 import { Link } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
 

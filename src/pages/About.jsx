@@ -1,8 +1,8 @@
 import React from "react";
-import About1 from "../assets/about1.jpg";
-import About2 from "../assets/about2.jpg";
-import RemoteAero from "../assets/remoteaero.png";
-import ScaniaIT from "../assets/scaniait.png";
+import About1 from "../../public/images/about1.jpg";
+import About2 from "../../public/images/about2.jpg";
+import RemoteAero from "../../public/images/remoteaero.png";
+import ScaniaIT from "../../public/images/scaniait.png";
 
 import { MdOutlineMail } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";

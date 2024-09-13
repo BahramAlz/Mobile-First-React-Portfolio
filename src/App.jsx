@@ -1,7 +1,7 @@
-import myLogo from "./assets/LOGO.svg";
-import darkLogo from "./assets/Dark.svg";
-import Portrait from "./assets/portrait.png";
-import Landing from "./assets/landing.png";
+import myLogo from "../public/images/LOGO.svg";
+import darkLogo from "../public/images/Dark.svg";
+import Portrait from "../public/images/portrait.png";
+import Landing from "../public/images/landing.png";
 
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaMoon } from "react-icons/fa";
