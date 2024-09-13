@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Landing from "../../public/images/landing.png";
 import Yung from "../../public/images/yungtitties.png";
 import { GoArrowUpRight } from "react-icons/go";
+import ProjectCard from "../components/ProjectCard";
 
 function Home() {
   return (
@@ -61,35 +62,25 @@ function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-10 md:flex-row md:items-center md:flex-1 group">
-            <div className="flex flex-col gap-2 md:max-w-xs opacity-100 group-hover:opacity-40 hover:!opacity-100 transition-opacity duration-300 ease-in-out">
-              <Link to="/projects/relanding" className="mt-10">
-                <img
-                  src={Landing}
-                  alt="Remote Aero Landing Page"
-                  className="rounded-md"
-                />
-                <h3 className="text-white font-medium mt-3 dark:text-gray-800">
-                  Remote Aero - Landing Page
-                </h3>
-              </Link>
-              <p className="text-[#b4b4b4] dark:text-gray-600">
-                A landing page to introduce remote.aero and their purpose to
-                users and also provide a login for the operators to access the
-                Mission Control.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-2 md:max-w-xs opacity-100 group-hover:opacity-40 hover:!opacity-100 transition-opacity duration-300 ease-in-out">
-              <img src={Yung} alt="Remote Aero Mission Control" />
-              <h3 className="text-white font-medium mt-3 dark:text-gray-800">
-                Remote Aero - Mission Control
-              </h3>
-              <p className="text-[#b4b4b4] dark:text-gray-600">
-                The Mission Control, where Drone Operators can control the drone
-                and assist SRSS in their rescue mission.
-              </p>
-            </div>
+          <div className="flex flex-col gap-5 md:flex-row group">
+            <Link to="/projects/relanding">
+              <ProjectCard
+                cardImage={Landing}
+                cardTitle={"Remote Aero - Landing page"}
+                cardDescription={
+                  "A landing page to introduces remote.aero and their purpose to users and also provide a login for the operators to access the Mission Control"
+                }
+              />
+            </Link>
+            <Link to="/projects/yungtitties">
+              <ProjectCard
+                cardImage={Yung}
+                cardTitle={"Yung Titties - Landing & Game website"}
+                cardDescription={
+                  "Specifically designed and developed to advertise the all female hip-hop trio’s new song!"
+                }
+              />
+            </Link>
           </div>
 
           <div className="flex items-center gap-1 mt-20">

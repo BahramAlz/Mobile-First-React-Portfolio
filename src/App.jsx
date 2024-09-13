@@ -26,6 +26,7 @@ import NoPage from "./pages/NoPage.jsx";
 import ReLanding from "./pages/projects/ReLanding.jsx";
 
 import { useState } from "react";
+import YungTitties from "./pages/projects/YungTitties.jsx";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -108,6 +109,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/relanding" element={<ReLanding />} />
+              <Route path="/projects/yungtitties" element={<YungTitties />} />
               <Route path="*" element={<NoPage />} />
             </Routes>
           </Router>
