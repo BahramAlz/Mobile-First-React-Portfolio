@@ -21,12 +21,12 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
 import NoPage from "./pages/NoPage.jsx";
 import ReLanding from "./pages/projects/ReLanding.jsx";
 
 import { useState } from "react";
 import YungTitties from "./pages/projects/YungTitties.jsx";
+import Crafts from "./pages/Crafts.jsx";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -66,10 +66,10 @@ function App() {
                     About
                   </Link>
                   <Link
-                    to="/projects"
+                    to="/Crafts"
                     className="text-[#b4b4b4 hover:text-white text-sm dark:hover:text-gray-800"
                   >
-                    Projects
+                    Crafts
                   </Link>
                 </div>
                 <div onClick={toggleDarkMode}>
@@ -95,7 +95,7 @@ function App() {
                   About
                 </Link>
                 <Link
-                  to="/projects"
+                  to="/crafts"
                   className="text-white hover:text-gray-900"
                   onClick={closeMenu}
                 >
@@ -107,7 +107,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/projects" element={<Projects />} />
+              <Route path="/crafts" element={<Crafts />} />
               <Route path="/projects/relanding" element={<ReLanding />} />
               <Route path="/projects/yungtitties" element={<YungTitties />} />
               <Route path="*" element={<NoPage />} />

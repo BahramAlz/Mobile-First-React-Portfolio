@@ -62,7 +62,7 @@ function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-5 md:flex-row group">
+          <div className="flex flex-col gap-10 mt-10 md:flex-row md:gap-5 group">
             <Link to="/projects/relanding">
               <ProjectCard
                 cardImage={Landing}
@@ -85,10 +85,10 @@ function Home() {
 
           <div className="flex items-center gap-1 mt-20">
             <Link
-              to="/projects"
+              to="/crafts"
               className="font-medium underline decoration-white dark:text-gray-800 dark:decoration-gray-800"
             >
-              All Projects
+              Crafts
             </Link>
             <GoArrowUpRight
               className="text-white dark:text-gray-800"
