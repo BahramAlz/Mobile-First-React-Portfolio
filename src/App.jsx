@@ -72,7 +72,7 @@ function App() {
                     Crafts
                   </Link>
                 </div>
-                <div onClick={toggleDarkMode}>
+                <div onClick={toggleDarkMode} className=" cursor-pointer">
                   <FaMoon size={18} />
                 </div>
                 <div className="md:hidden" onClick={toggleMenu}>
