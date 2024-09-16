@@ -11,7 +11,7 @@ const ReLanding = () => {
     <div className="py-10 px-6 dark:bg-[#fff] flex flex-col gap-16">
       <div className="flex flex-col gap-4">
         <a
-          href="http://remote.aero"
+          href="http://rmc.remote.aero"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm underline decoration-white font-medium dark:text-gray-900 dark:decoration-black"
@@ -58,10 +58,10 @@ const ReLanding = () => {
       <div className="flex items-center gap-1">
         <GoArrowLeft className=" dark:text-gray-800" size={20} />
         <Link
-          to="/projects"
+          to="/"
           className="font-medium underline decoration-white dark:text-gray-800 dark:decoration-gray-800"
         >
-          All Projects
+          Home
         </Link>
       </div>
     </div>
