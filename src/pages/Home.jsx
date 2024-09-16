@@ -4,6 +4,7 @@ import Landing from "../../public/images/landing.png";
 import Yung from "../../public/images/yungtitties.png";
 import { GoArrowUpRight } from "react-icons/go";
 import ProjectCard from "../components/ProjectCard";
+import Socials from "../components/Socials";
 
 function Home() {
   return (
@@ -22,33 +23,14 @@ function Home() {
             tech news!
           </p>
         </div>
-        <div className="flex flex-wrap gap-2 mt-8 md:gap-5">
-          <a
-            href="http://"
-            target="_blank"
-            rel="email link"
-            className="bg-[#191919] px-5 py-1 rounded-full flex items-center gap-1 font-medium md:hover:bg-zinc-800"
-          >
-            Email <GoArrowUpRight className="text-white dark:text-gray-300" />
-          </a>
-          <a
-            href="https://github.com/BahramAlz"
-            target="_blank"
-            rel="github link"
-            className="bg-[#191919] px-5 py-1 rounded-full flex items-center gap-1 font-medium md:hover:bg-zinc-800"
-          >
-            Github <GoArrowUpRight className="text-white dark:text-gray-300" />
-          </a>
-          <a
-            href="http://www.linkedin.com/in/bahram-al-zuhairi-4b6001173"
-            target="_blank"
-            rel="linkedin link"
-            className="bg-[#191919] px-5 py-1 rounded-full flex items-center gap-1 font-medium md:hover:bg-zinc-800"
-          >
-            LinkedIn{" "}
-            <GoArrowUpRight className="text-white dark:text-gray-300" />
-          </a>
-        </div>
+        <Socials
+          link1={"google.se"}
+          social={"Email"}
+          link2={"https://github.com/BahramAlz"}
+          social2={"Github"}
+          link3={"http://www.linkedin.com/in/bahram-al-zuhairi-4b6001173"}
+          social3={"LinkedIn"}
+        />
       </div>
 
       <section>
