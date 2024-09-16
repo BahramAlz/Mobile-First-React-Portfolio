@@ -3,6 +3,8 @@ import LPMOBILE from "../../../public/images/lpmobile.png";
 import LANDING from "../../../public/images/landing.png";
 import { Link } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
+import ProjectDescCard from "../../components/ProjectDescCard";
+import Tags from "../../components/Tags";
 
 const ReLanding = () => {
   return (
@@ -28,36 +30,30 @@ const ReLanding = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4">
-        <img src={LPMOBILE} alt="mobile first display" />
-        <p className="text-[#b4b4b4] text-center px-2 dark:text-gray-700">
-          Mobile view of application, including information about Remote Aero, a
-          contact us, and a login to the Mission Control.
-        </p>
-      </div>
+      <ProjectDescCard
+        cardImage={LPMOBILE}
+        cardAlt={"Mobile view"}
+        cardDescription={
+          "Mobile view of application, including information about Remote Aero, a contact us, and a login to the Mission Control."
+        }
+      />
 
-      <div className="flex flex-col gap-4">
-        <img
-          src={LANDING}
-          alt="laptop display of landing page"
-          className="rounded-lg"
-        />
-        <p className="text-[#b4b4b4] text-center px-2 dark:text-gray-700">
-          Desktop view of the landing page home page. The application is
-          designed to be responsive to all platforms and devices.
-        </p>
-      </div>
+      <ProjectDescCard
+        cardImage={LANDING}
+        cardAlt={"Desktop view"}
+        cardDescription={
+          "Desktop view of the landing page home page. The application is designed to be responsive to all platforms and devices."
+        }
+      />
 
-      <div className="flex flex-col gap-3">
-        <h3 className="text-[#b4b4b4] font-medium dark:text-gray-700">Tags</h3>
-        <div className="flex flex-wrap gap-3">
-          <p className="bg-[#191919] px-5 py-1 rounded-md">ReactJS</p>
-          <p className="bg-[#191919] px-5 py-1 rounded-md">CSS Modules</p>
-          <p className="bg-[#191919] px-5 py-1 rounded-md">Material UI</p>
-          <p className="bg-[#191919] px-5 py-1 rounded-md">TypeScript</p>
-          <p className="bg-[#191919] px-5 py-1 rounded-md">Figma</p>
-        </div>
-      </div>
+      <Tags
+        cardTitle={"Tags"}
+        tagName={"ReactJS"}
+        tagName2={"TypeScript"}
+        tagName3={"CSS Modules"}
+        tagName4={"Material UI"}
+        tagName5={"Figma"}
+      />
 
       <div className="flex items-center gap-1">
         <GoArrowLeft className=" dark:text-gray-800" size={20} />
