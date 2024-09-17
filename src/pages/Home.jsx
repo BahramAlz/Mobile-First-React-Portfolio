@@ -23,14 +23,16 @@ function Home() {
             tech news!
           </p>
         </div>
-        <Socials
-          link1={"google.se"}
-          social={"Email"}
-          link2={"https://github.com/BahramAlz"}
-          social2={"Github"}
-          link3={"http://www.linkedin.com/in/bahram-al-zuhairi-4b6001173"}
-          social3={"LinkedIn"}
-        />
+        <div className="mt-8">
+          <Socials
+            link1={"google.se"}
+            social={"Email"}
+            link2={"https://github.com/BahramAlz"}
+            social2={"Github"}
+            link3={"http://www.linkedin.com/in/bahram-al-zuhairi-4b6001173"}
+            social3={"LinkedIn"}
+          />
+        </div>
       </div>
 
       <section>

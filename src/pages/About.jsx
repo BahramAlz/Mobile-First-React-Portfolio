@@ -2,7 +2,9 @@ import React from "react";
 import About1 from "../../public/images/about1.jpg";
 import About2 from "../../public/images/about2.jpg";
 import RemoteAero from "../../public/images/remoteaero.png";
-import ScaniaIT from "../../public/images/scaniait.png";
+import Scania from "../../public/images/scania.svg";
+import Socials from "../components/Socials";
+import Jobs from "../components/Jobs";
 
 import { MdOutlineMail } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";
@@ -51,83 +53,48 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:gap-20">
+      <div className="flex flex-col gap-2 mt-10 md:flex-row md:items-center md:gap-14">
         <h3 className="text-[#b4b4b4] dark:text-black dark:font-medium">
           Connect
         </h3>
-        <div className="flex gap-5 flex-wrap">
-          <div className="flex items-center gap-10 px-5 py-3 bg-[#191919] rounded-md">
-            <div className="flex gap-3 items-center">
-              <MdOutlineMail size={20} />
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                Email
-              </a>
-            </div>
-            <GoArrowUpRight size={20} />
-          </div>
-          <div className="flex items-center gap-10 px-5 py-3 bg-[#191919] rounded-md">
-            <div className="flex gap-3 items-center">
-              <MdOutlineMail size={20} />
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                Github
-              </a>
-            </div>
-            <GoArrowUpRight size={20} />
-          </div>
-          <div className="flex items-center gap-10 px-5 py-3 bg-[#191919] rounded-md">
-            <div className="flex gap-3 items-center">
-              <MdOutlineMail size={20} />
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-              </a>
-            </div>
-            <GoArrowUpRight size={20} />
-          </div>
-        </div>
+
+        <Socials
+          link1={"google.se"}
+          social={"Email"}
+          link2={"https://github.com/BahramAlz"}
+          social2={"Github"}
+          link3={"http://www.linkedin.com/in/bahram-al-zuhairi-4b6001173"}
+          social3={"LinkedIn"}
+        />
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="flex flex-col gap-2 mt-20 md:flex-row md:gap-20">
+        <div className="flex flex-col gap-2 mt-10 md:flex-row md:gap-20">
           <h3 className="text-[#b4b4b4] dark:text-black dark:font-medium">
             Work
           </h3>
           <div className="flex flex-col gap-5 dark:text-black">
             <p>
-              I specialize in Python, data analytics, React, web development,
-              UI/UX, and product design. But I am always learning new things.
-              Here are some of the places I have worked.
+              I specialize in JavaScript, React, Web Development, UI/UX, and
+              Product Design. But I am always learning new things. Here are some
+              of the places I have worked.
             </p>
-          </div>
-        </div>
 
-        <div>
-          <div className="flex gap-2 items-center mt-4">
-            <img src={RemoteAero} alt="" />
-            <div>
-              <div className="flex items-center space-x-20">
-                <p className="dark:text-black">Frontend Developer</p>
-                <p className="text-xs text-[#b4b4b4] dark:text-gray-600">
-                  2023-2024
-                </p>
-              </div>
-              <p className="text-xs text-[#b4b4b4] dark:text-gray-600">
-                Remote Aero
-              </p>
+            <div className="mt-4">
+              <Jobs
+                imageLink={RemoteAero}
+                jobTitle={"Frontend Developer"}
+                jobDate={"2023-2024"}
+                companyName={"Remote Aero"}
+              />
+
+              <Jobs
+                imageLink={Scania}
+                jobTitle={"Frontend Developer"}
+                jobDate={"2023-2024"}
+                companyName={"Remote Aero"}
+              />
             </div>
-          </div>
-        </div>
-        <div className="flex gap-2 items-center mt-4">
-          <img src={ScaniaIT} alt="" />
-          <div>
-            <div className="flex items-center space-x-40">
-              <p className="dark:text-black">CS Agent</p>
-              <p className="text-xs text-[#b4b4b4] dark:text-gray-600">
-                2018-2020
-              </p>
-            </div>
-            <p className="text-xs text-[#b4b4b4] dark:text-gray-600">
-              Scania IT
-            </p>
           </div>
         </div>
       </div>
