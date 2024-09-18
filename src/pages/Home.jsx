@@ -15,7 +15,7 @@ function Home() {
             Bahram Al-Zuhairi
           </h1>
           <h2 className="text-xl text-[#b4b4b4] dark:text-gray-900">
-            React Developer
+            Front-end Developer
           </h2>
           <p className="text-[#b4b4b4] mt-5 dark:text-gray-800 md:max-w-lg">
             Good evening, I’m a programmer who loves building new things. In

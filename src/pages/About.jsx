@@ -91,7 +91,7 @@ const About = () => {
               <Jobs
                 imageLink={Scania}
                 jobTitle={"Frontend Developer"}
-                jobDate={"2023-2024"}
+                jobDate={"2019-2020"}
                 companyName={"Remote Aero"}
               />
             </div>
