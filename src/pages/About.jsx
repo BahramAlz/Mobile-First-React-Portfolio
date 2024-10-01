@@ -90,9 +90,9 @@ const About = () => {
 
               <Jobs
                 imageLink={Scania}
-                jobTitle={"Frontend Developer"}
+                jobTitle={"Customer Support"}
                 jobDate={"2019-2020"}
-                companyName={"Remote Aero"}
+                companyName={"Scania IT"}
               />
             </div>
           </div>
