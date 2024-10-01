@@ -21,12 +21,12 @@ const About = () => {
             Just a quick glimpse
           </p>
         </div>
-        <div className="max-w-48 relative left-4 mb-16">
+        <div className="max-w-48 relative left-4 mb-16 md:left-32">
           <img src={About2} alt="portrait" className="rounded-md -rotate-6" />
           <img
             src={About1}
             alt="portrait"
-            className="rounded-md absolute top-14 left-32 rotate-6"
+            className="rounded-md absolute top-14 left-32 rotate-6 md:left-40"
           />
         </div>
       </div>
